@@ -10,8 +10,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.savannah.button_counter_floyd.ButtonCounter">
 
-    <TextView
+    <Button
+        android:text="+"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/ascend_button"
+        android:elevation="0dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/descend_button"
+        android:layout_alignEnd="@+id/descend_button" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descend_button"
+        android:layout_above="@+id/ascend_button"
+        android:layout_alignRight="@+id/countText"
+        android:layout_alignEnd="@+id/countText" />
+
+    <TextView
+        android:text="count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/countText"
+        android:textSize="30sp"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/descend_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_button"
+        android:layout_below="@+id/ascend_button"
+        android:layout_alignLeft="@+id/ascend_button"
+        android:layout_alignStart="@+id/ascend_button" />
 </RelativeLayout>
